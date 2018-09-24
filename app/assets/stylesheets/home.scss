@@ -41,10 +41,14 @@ body{
   width: 120px;
   height: 20px;
   padding: 0px;
-  margin-top: 1px;
+  margin-top: 22px;
 }
 
-
+input[type=checkbox], input[type=radio] {
+    margin: 25px 0 0 !important;
+    margin-top: 1px\9;
+    line-height: normal;
+}
 
 
 // fin ajustage de liens se souvenir de moi & mot de passe ouvlié?
