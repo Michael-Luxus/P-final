@@ -49,7 +49,7 @@ h3 {
 }
 h4 {
 	font-size: 22px;
-	color: #e8206b;
+	color: #3b00ff;
 	font-weight: 500;
 }
 h5 {
@@ -72,7 +72,7 @@ background: #232323 !important;
 }
 .btn {
 	background-color: transparent;
-	color: #db4766;
+	color: #3b00ff;
 	font-size: 16px;
 	font-weight: 600;
 	border: 0;
@@ -81,10 +81,10 @@ background: #232323 !important;
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
-	border: 1px solid #db4766;
+	border: 1px solid #3b00ff;
 }
 .btn:hover, .btn:focus {
-	background-color: #db4766;
+	background-color: #3b00ff;
 	color: #fff;
 }
 .btn-large {
@@ -118,7 +118,7 @@ a.morebtn {
 }
 a.morebtn:hover {
     color: #fff;
-    background: #e8206b;
+    background: #3b00ff;
 }
 body {
 	font-family: "Open Sans", Arial, sans-serif;
@@ -168,7 +168,7 @@ ul li {
 #header .logo {
 	float: left;
 	font-size: 38px;
-	color: #e8206b;
+	color: #3b00ff;
 	text-decoration:none;
 	letter-spacing: 3px;
 	/* margin-top: -10px; */
@@ -195,7 +195,7 @@ ul li {
 }
 #header.fixed .nav-toggle {
 	top: 14px;
-	color: #db4766;
+	color: #3b00ff;
 }
 .navigation.open {
 	opacity: 0.9;
@@ -220,7 +220,7 @@ ul li {
 	text-transform: uppercase;
 }
 .navigation a:hover, .navigation a.active {
-	color: #e8206b;
+	color: #3b00ff;
 }
 .nav-toggle {
 	display: none;
@@ -526,7 +526,7 @@ ul li {
 	$intro
 ========================================================================== */
 .intro {
-	background-color: #e8206b;
+	background-color: #3b00ff;
 	/* color: #000; */
 }
 .intro h3 {
@@ -568,14 +568,14 @@ font-size: 48px;
 	margin-top: 7px;
 	background: #ffffff;
 	border: 1px solid #fff;
-	border: 4px solid #db4766;
+	border: 4px solid #3b00ff;
 }
 .services .icon {
 	color: #ffffff;
 	font-size: 38px;
 	padding-left: 15px;
 	/* float: left; */
-	background: #e8206b;
+	background: #3b00ff;
 	padding: 20px;
 	width: 90px;
 	margin: 0 auto;
@@ -871,7 +871,7 @@ ul.list-default li {
 	 Testimonials
 -------------------------------------------------------------------------------*/
 .testimonials {
-	background-color: #e8206b;
+	background-color: #3b00ff;
 	position: relative;
 	text-align: center;
 }
@@ -944,7 +944,7 @@ ul.list-default li {
 	border: #e0e0e0 1px solid;
 }
 .conForm .submitBnt {
-	background: #e8206b;
+	background: #3b00ff;
 	color: #fff;
 	margin-top: 30px;
 	padding:15px 30px 15px 30px;
@@ -960,7 +960,7 @@ ul.list-default li {
 }
 .conForm .submitBnt:hover {
 	background: #E5E5E5;
-	color: #e8206b;
+	color: #3b00ff;
 }
 #success_page{
 	color: #00bdbd;

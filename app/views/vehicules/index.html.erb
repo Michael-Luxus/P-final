@@ -19,7 +19,7 @@
   <tbody>
     <% @vehicules.each do |vehicule| %>
       <tr>
-        <td><%= vehicule.date %></td>
+        <td required=true><%= vehicule.date %></td>
         <td><%= vehicule.owner_name %></td>
         <td><%= vehicule.N°cin %></td>
         <td><%= vehicule.vehicules_type %></td>

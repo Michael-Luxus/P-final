@@ -6,8 +6,70 @@
 body{
   padding: 0 !important;
   margin: 0 !important;
+
 }
 
+//×××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××
+.bonom{
+  height: 70px !important;
+  width: 70px !important;
+  background: #000 !important;
+}
+//×××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××
+
+#cform{
+  background: #000;
+}
+#kemail {
+  width: calc(100% - 101px);
+  height: 70px;
+  padding-left: 35px;
+  padding-right: 30px;
+  margin: 0px;
+  font-size: 30px !important;
+  color: #fff;
+}
+
+
+#cform input[type=submit] {
+  top: 100px;
+  float: right;
+  background: #b2702e !important;
+  height: 70px;
+}
+//head serach bar
+#over{
+  position: absolute !important;
+  z-index: 100 !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  width: 580px;
+  height: 54px;
+  top: 300px;
+  left: 50%;
+  background: #3b00ff;
+  -moz-transform: translate3d(-50%, 0, 0) !important;
+  -ms-transform: translate3d(-50%, 0, 0) !important;
+  -webkit-transform: translate3d(-50%, 0, 0) !important;
+  transform: translate3d(-50%, 0, 0) !important;
+}
+input.bbt:hover{
+  background: #3b00ff !important;
+
+}
+
+form input#bbar{
+  width: 400px;
+  height: 54px;
+  margin: 0 !important;
+}
+input.bbt{
+  margin-left: -3px !important;
+  bottom: 20px !important;
+  margin-bottom: -23px !important;
+}
+
+//head serach bar
 
 //ajustage de liens se souvenir de moi & mot de passe ouvlié?
 
@@ -45,9 +107,9 @@ body{
 }
 
 input[type=checkbox], input[type=radio] {
-    margin: 25px 0 0 !important;
-    margin-top: 1px\9;
-    line-height: normal;
+  margin: 25px 0 0 !important;
+  margin-top: 1px\9;
+  line-height: normal;
 }
 
 
@@ -58,7 +120,7 @@ input[type=checkbox], input[type=radio] {
   padding: 0 !important;
   background-color: transparent !important;
   display: inherit !important;
-  border: 3px solid #e8206b;
+  border: 3px solid #3b00ff;
   padding-bottom: 55px !important;
   height: 61px !important;
   margin-bottom: 30px !important;
@@ -109,7 +171,7 @@ a{
 }
 
 .navigation a:hover, .navigation a.active {
-  color: #ff688b !important;
+  color: #3b00ff !important;
 }
 
 #first-slider .carousel-control {
@@ -139,7 +201,7 @@ a{
   animation: lds-grid 1.2s linear infinite;
 }
 .lds-grid div:hover {
-  background: #e8206b;
+  background: #3b00ff;
 }
 .lds-grid div:nth-child(1) {
   top: 6px;
@@ -211,7 +273,7 @@ a{
   background: none;
 }
 #immatric p a:hover{
-  color: #e8206b !important;
+  color: #3b00ff !important;
 }
 #immatriculus p a{
   color: white !important;
@@ -219,7 +281,7 @@ a{
   background: none;
 }
 #immatriculus p a:hover{
-  color: #e8206b !important;
+  color: #3b00ff !important;
 }
 /*//×××××××××××××××××××××××××××××*/
 
@@ -239,5 +301,29 @@ a{
 #header {
   height: 88px;
 }
+#intro.section{
+  background: #3b00ff !important;
+}
+blockquote{
+  background:  #3b00ff !important;
+}
 /*//×××××××××××××××××××××××××××××*/
 //fin d'ajustage du theme ××××××××××××××××××××××××
+h4{
+  color: #70b8f5 !important;
+}
+#first-slider h4 {
+  color: #fff !important;
+}
+a.morebtn {
+  border: 1px solid #70b8f5;
+}
+.services .icon {
+  background: #70b8f5;
+}
+.services-content {
+  border: 4px solid #0dbeff;
+}
+.navigation a:hover, .navigation a.active {
+  color: #3b00ff !important;
+}

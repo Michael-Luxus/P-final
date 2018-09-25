@@ -86,7 +86,8 @@
   content: "\e016"; }
 
 .icon-gift:before {
-  content: "\e017"; }
+  content: "\e020"; }
+/*  content: "\e017"; }*/
 
 .icon-bargraph:before {
   content: "\e018"; }
@@ -240,7 +241,8 @@
   content: "\e049"; }
 
 .icon-heart:before {
-  content: "\e04a"; }
+  content: "\e01d"; }
+/*  content: "\e04a"; }*/
 
 .icon-cloud:before {
   content: "\e04b"; }

@@ -7,16 +7,6 @@
     <meta name="author" content="webthemez">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fab fashion responsive html bootstrap web template by webthemez</title>
-    <!--
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="css/style4.css" />
--->
     <!--    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
@@ -37,11 +27,11 @@
 
           <nav class="navigation" role="navigation">
             <ul class="primary-nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Features</a></li>
-              <li><a href="#content-3-10">About</a></li> 
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#content-3-10">A propos</a></li>
               <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#teams">Friends</a></li>
+              <li><a href="#teams">Equipe</a></li>
               <% if user_signed_in? %>
               <% else %>
               <li><a href="#connecter">Connecter</a></li>
@@ -55,8 +45,8 @@
           </nav>
           <a href="#" class="nav-toggle">Menu<span></span></a> </div>
       </header>
-      <!-- banner text --> 
 
+      <!-- banner text -->
       <div id="first-slider">
         <div id="carousel-example-generic" class="carousel slide carousel-fade">
           <!-- Indicators -->
@@ -70,31 +60,34 @@
           <div class="carousel-inner" role="listbox">
             <!-- Item 1 -->
             <div class="item active slide1">
-              <div class="row"><div class="container"> 
+              <div class="row"><div class="container">
                 <div class="col-md-9 text-left">
-                  <h3 data-animation="animated bounceInDown">Fashion Trends</h3>
-                  <h4 data-animation="animated bounceInUp">Get our latest 2018 Collection </h4>             
+                  <h3 data-animation="animated bounceInDown">Immatric</h3>
+                  <h4 data-animation="animated bounceInUp"> <br><br><br><br><br><br><br><br><br><br>
+                    Le plus large repertoire de véhicule motorisé</h4>
                 </div>
                 </div></div>
-            </div> 
+            </div>
             <!-- Item 2 -->
             <div class="item slide2">
               <div class="row"><div class="container">
                 <div class="col-md-7 text-left">
-                  <h3 data-animation="animated bounceInDown">Winter Collection</h3>
-                  <h4 data-animation="animated bounceInUp">Create beautiful slideshows </h4>
-                </div> 
+                  <h3 data-animation="animated bounceInDown"></h3>
+                  <h4 data-animation="animated bounceInUp"><br><br><br><br><br><br><br><br><br><br>
+                    Recherche ouvert à grand public</h4>
+                </div>
                 </div></div>
             </div>
             <!-- Item 3 -->
             <div class="item slide3">
               <div class="row"><div class="container">
                 <div class="col-md-7 text-left">
-                  <h3 data-animation="animated bounceInDown">Summer Collection</h3>
-                  <h4 data-animation="animated bounceInUp">Bootstrap Image Carousel Slider</h4>
-                </div>  
+                  <h3 data-animation="animated bounceInDown"></h3>
+                  <h4 data-animation="animated bounceInUp"><br><br><br><br><br><br><br><br><br><br>
+                    Trouver des infos à partir des plaques d'immatriculation de voitures</h4>
+                </div>
                 </div></div>
-            </div>     
+            </div>
           </div>
           <!-- End Wrapper for slides-->
           <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -107,89 +100,100 @@
       </div>
 
     </section>
-    <!-- header section --> 
+    <!-- header section -->
     <!-- intro section -->
     <section id="intro" class="section intro">
       <div class="container">
         <div class="col-md-10 col-md-offset-1 text-center">
-          <h3>Welcome To Fab</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Recherchez la plaque </h3>
+
+          <%= form_tag vehicules_path, :method => 'get' do %>
+          <div id="cform">
+            <%= text_field_tag :search, params[:search], placeholder:"2744532 WWT", required: true, id:"kemail", class:" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" %>
+            <input type="submit" id="submit" class="submitBnt" value="Send">
+          </div>
+          <% end %>
+          
+
+
+         
+          <p>.<br>Immatric est le premier site à Madagascar qui permet d'identifier un véhicule par un simple recherche sur son numéro d'immatriculation. Il offre à son hôte le contrôle des véhicule en circulation sur le pays, et au grand public, l'accès aux infos de chaque véhicules </p>
         </div>
       </div>
     </section>
-    <!-- intro section --> 
+    <!-- intro section -->
     <!-- section -->
     <section id="Bride_Groom">
-      <div class="container"> 
+      <div class="container">
 
-        <div class="row">  
+        <div class="row">
           <div class="section-header">
-            <h2 class="wow fadeInDown animated">Design Trends</h2>
+            <h2 class="wow fadeInDown animated">Voitures Suspects</h2>
             <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
           </div>
-          <div id="content24" data-section="content-24" class="data-section"> 
+          <div id="content24" data-section="content-24" class="data-section">
             <div class="col-md-4">
 
               <img src="../images/img1.jpg" alt="bride" class="img-middle"/>
               <div class="align-center">
                 <h4>Women's Fashion</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                 <a href="details.html" class="morebtn">More</a>
               </div>
             </div>
-            <div class="col-md-4">  
+            <div class="col-md-4">
               <img src="../images/img2.jpg" alt="bride" class="img-middle"/>
               <div class="align-center">
                 <h4>Men's Fashion</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                 <a href="details.html" class="morebtn">More</a>
               </div>
-            </div> 
-            <div class="col-md-4">  
+            </div>
+            <div class="col-md-4">
               <img src="../images/img3.jpg" alt="bride" class="img-middle"/>
               <div class="align-center">
                 <h4>Kids's Fashion</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                 <a href="details.html" class="morebtn">More</a>
               </div>
-            </div> 
+            </div>
           </div>
-        </div>    
+        </div>
       </div>
     </section>
-    <!-- section --> 
+    <!-- section -->
 
 
     <!-- services section -->
     <section id="services" class="services service-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="wow fadeInDown animated">Features</h2>
-          <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+          <h2 class="wow fadeInDown animated">Services</h2>
+          <p class="wow fadeInDown animated">Voici les services que notre site offre à l'hôte du site, ou admin, et au grand public,  <br>via le visite du site, avec un coût raisonnable</p>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-heart"></span>
             <div class="services-content">
-              <h5>Money Back</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
+              <h5>Controle</h5>
+              <p>Notre site offre pour la première fois à <br>l'hotorité Malgache un controle sur les <br> véhicules en circulation dans le pays.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-gift"></span>
             <div class="services-content">
-              <h5>Gift Coupon</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
+              <h5>Sécurité</h5>
+              <p>Chaqun peut désormais vérifier si tel ou tel <br> véhicule immatriculé est réglo ou illégale avant <br>d'efféctuer un achat ou un échange.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone"></span>
             <div class="services-content">
-              <h5>Free Shipping</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p> 
+              <h5>Facile d'accès</h5>
+              <p>Notre site offre un recherche à la porté du  <br>grand public, n'import où, via notre address. <br> Le coût du recherche est très abordable.</p>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </section>
-    <!-- services section --> 
+    <!-- services section -->
     <!--About-->
     <section id="content-3-10" class="content-block data-section nopad content-3-10">
       <div class="image-container col-sm-6 col-xs-12 pull-left">
@@ -202,13 +206,13 @@
         <div class="row">
           <div class="col-sm-6 col-sm-offset-6 col-xs-12 content">
             <div>
-              <h3>About Us</h3>
+              <h3>A propos de nous</h3>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <p>Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Nous sommes des jeunes étudiants en informatique et développement web, qui ont suivit une formation chez Sayna pendant quatre mois à proximatif.</p>
+              <p>Dans ce projet, notre pricipal objectif est de mettre en pratique notre savoir faire et de présenter quelquechose de concret et de tangible comme présentation. Alors on a réalisé ce site qui consiste à repertorier les véhicule pour mettre en pratique le concepte de stockage de base de donné et de recherche.</p>
             </div>
-            <a href="#gallery" class="btn btn-outline btn-outline outline-dark">Gallery</a>
+            <a href="#gallery" class="btn btn-outline btn-outline outline-dark">Gallerie</a>
           </div>
         </div><!-- /.row-->
       </div><!-- /.container -->
@@ -217,9 +221,9 @@
 
     <!-- videos section -->
     <section class="video-section">
-      <div class="container"> 
-        <div class="row">  
-          <div id="content24" data-section="content-24" class="data-section"> 
+      <div class="container">
+        <div class="row">
+          <div id="content24" data-section="content-24" class="data-section">
             <div class="col-md-6">
               <h3>Videos</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -230,19 +234,19 @@
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/146742515?badge=0" allowfullscreen=""></iframe>
               </div>
-            </div> 
+            </div>
           </div>
-        </div><!-- end row -->    
+        </div><!-- end row -->
       </div>
     </section>
-    <!-- videos section --> 
+    <!-- videos section -->
 
     <!-- gallery section -->
     <section id="gallery" class="gallery section">
       <div class="container-fluid">
         <div class="section-header">
-          <h2 class="wow fadeInDown animated">Gallery</h2>
-          <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+          <h2 class="wow fadeInDown animated">Gallerie</h2>
+          <p class="wow fadeInDown animated">Quelque échantillon de photo prototype de véhicule dernier crit.</p>
         </div>
         <div class="row no-gutter">
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/01.jpg" class="work-box"> <img src="../images/portfolio/01.jpg" alt="">
@@ -251,7 +255,7 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/02.jpg" class="work-box"> <img src="../images/portfolio/02.jpg" alt="">
             <div class="overlay">
@@ -259,7 +263,7 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/03.jpg" class="work-box"> <img src="../images/portfolio/03.jpg" alt="">
             <div class="overlay">
@@ -267,15 +271,15 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/04.jpg" class="work-box"> <img src="../images/portfolio/04.jpg" alt="">
             <div class="overlay">
-              <div class="overlay-caption"> 
+              <div class="overlay-caption">
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/05.jpg" class="work-box"> <img src="../images/portfolio/05.jpg" alt="">
             <div class="overlay">
@@ -283,7 +287,7 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/06.jpg" class="work-box"> <img src="../images/portfolio/06.jpg" alt="">
             <div class="overlay">
@@ -291,7 +295,7 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/07.jpeg" class="work-box"> <img src="../images/portfolio/07.jpg" alt="">
             <div class="overlay">
@@ -299,7 +303,7 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/08.jpeg" class="work-box"> <img src="../images/portfolio/08.jpg" alt="">
             <div class="overlay">
@@ -307,56 +311,56 @@
                 <p><span class="icon icon-magnifying-glass"></span></p>
               </div>
             </div>
-            <!-- overlay --> 
+            <!-- overlay -->
             </a> </div>
         </div>
       </div>
     </section>
-    <!-- gallery section --> 
+    <!-- gallery section -->
     <!-- our team section -->
     <section id="teams" class="section teams">
       <div class="container">
         <div class="section-header">
-          <h2 class="wow fadeInDown animated">Team</h2>
-          <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+          <h2 class="wow fadeInDown animated">Notre équipe</h2>
+          <p class="wow fadeInDown animated">Sur ce projet, nous somme composé de quatre membre, dont chaqun avait son rôle respectif <br>à jouer dans la réalisation du projet.</p>
         </div>
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="person"><img src="../images/team-1.jpg" alt="" class="img-responsive">
               <div class="person-content">
-                <h4>Jonh Dow</h4> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
+                <h4>Kaeish</h4>
+                <p>Technicien développeur <br> back-end.</p>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person"> <img src="../images/team-2.jpg" alt="" class="img-responsive">
               <div class="person-content">
-                <h4>Markus Linn</h4> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-              </div> 
+                <h4>Laxus</h4>
+                <p>Technicien développeur <br> front-end.</p>
+              </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person"> <img src="../images/team-3.jpg" alt="" class="img-responsive">
               <div class="person-content">
-                <h4>Chris Jemes</h4> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-              </div> 
+                <h4>Râ Maître</h4>
+                <p>Technicien développeur <br> back-end.</p>
+              </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person"> <img src="../images/team-4.jpg" alt="" class="img-responsive">
               <div class="person-content">
-                <h4>Vintes Mars</h4> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-              </div> 
+                <h4>Bez Bez</h4>
+                <p>Technicien développeur <br> back-end.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- our team section --> 
+    <!-- our team section -->
     <!-- Testimonials section -->
     <section id="testimonials" class="section testimonials no-padding">
       <div class="container-fluid">
@@ -366,7 +370,7 @@
               <li>
                 <div class="col-md-12">
                   <blockquote>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa 
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
                       semper aliquam quis mattis consectetur adipiscing elit.." </p>
                     <p>Chris Mentsl</p>
                   </blockquote>
@@ -375,7 +379,7 @@
               <li>
                 <div class="col-md-12">
                   <blockquote>
-                    <p>"Praesent eget risus vitae massa Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa 
+                    <p>"Praesent eget risus vitae massa Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
                       semper aliquam quis mattis consectetur adipiscing elit.." </p>
                     <p>Kristean velnly</p>
                   </blockquote>
@@ -384,7 +388,7 @@
               <li>
                 <div class="col-md-12">
                   <blockquote>
-                    <p>"Consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa 
+                    <p>"Consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
                       semper aliquam quis mattis consectetur adipiscing elit.." </p>
                     <p>Markus Denny</p>
                   </blockquote>
@@ -393,7 +397,7 @@
               <li>
                 <div class="col-md-12">
                   <blockquote>
-                    <p>"Vitae massa semper aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa 
+                    <p>"Vitae massa semper aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
                       semper aliquam quis mattis consectetur adipiscing elit.." </p>
                     <p>John Doe</p>
                   </blockquote>
@@ -404,14 +408,14 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials section --> 
+    <!-- Testimonials section -->
 
     <!-- Footer section -->
     <footer class="footer">
       <div class="container-fluid">
         <div id="map-row" class="row">
-          <div class="col-xs-12">    
-            <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe> 
+          <div class="col-xs-12">
+            <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
 
             <div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
               <h4 style="margin-top:0;color:#fff;">Address</h4>
@@ -428,17 +432,17 @@
         </div>
       </div>
     </footer>
-    <!-- Footer section --> 
+    <!-- Footer section -->
 
-    <!-- JS FILES --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="../js/bootstrap.min.js"></script> 
-    <script src="../js/jquery.flexslider-min.js"></script> 
-    <script src="../js/jquery.fancybox.pack.js"></script> 
-    <script src="../js/retina.min.js"></script> 
-    <script src="../js/modernizr.js"></script> 
-    <script src="../js/main.js"></script> 
-    <script type="text/javascript" src="../js/jquery.contact.js"></script> 
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <script src="../js/jquery.fancybox.pack.js"></script>
+    <script src="../js/retina.min.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/jquery.contact.js"></script>
   </body>
 </html>
 

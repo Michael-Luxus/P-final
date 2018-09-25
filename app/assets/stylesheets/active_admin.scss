@@ -21,11 +21,24 @@
 
 /*ajustage du front admin login*/
 // login admin-----------------------------
+body{
+
+//  background-color: #6f7b91 !important;
+    line-height: 27px !important;
+}
+
+a:visited {
+//    color: #fff !important;
+}
+
+thead th {
+    background: #37404e;
+}
 
 #wrapper {
     width: 100%;
     height: 150%;
-    background: red;
+    background: #3b00ff;
     background: url(images/zz.jpg) no-repeat fixed;
     background-size: cover;
     position: absolute;
@@ -87,7 +100,7 @@ a.button, a:link.button, a:visited.button, input[type=submit], input[type=button
     box-shadow: none !important;
     border: none !important;
     color: #efefef !important;
-    background: #eb428a !important;
+    background: #3b00ff !important;
     letter-spacing: 5px !important;
     text-transform: uppercase !important;
 }
@@ -227,8 +240,39 @@ form input[type=text], form input[type=password], form input[type=password]:acti
     border: none !important;
     text-shadow: none !important;
     color: #fff !important;
-    background: #f04c91 !important;
+    background: #3b00ff !important;
     text-transform: uppercase !important;
+}
+body.logged_in .flash {
+  background-color: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border-bottom: none !important;
+  color: #eee !important;
+  background: #000 !important;
+}
+body.logged_in .flash.flash_notice {
+  background-color: #2b342c !important;
+  background-image: none !important;
+  border: none !important;
+  color: #eee !important;
+  color: #eee !important;
+  background: #000 !important;
+}
+form fieldset.inputs {
+    background: none !important;
+    box-shadow: none !important;
+}
+form fieldset.buttons li.cancel a, form fieldset.actions li.cancel a {
+    border-radius: 0px !important;
+    background: #bbb !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    text-shadow: none !important;
+    color: #5E6469;
+    padding: 7px !important;
 }
 // fin dashboard------------------------------------------
 
